@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class actions {
+public class Drag_and_Drop 
+{
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException 
+	{
 		WebDriver d = new ChromeDriver();
 		Actions a= new Actions(d);
 
