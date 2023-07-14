@@ -21,7 +21,9 @@ public class JavaScriptExecutor2
 		Thread.sleep(2000);
 	//	jse.executeScript("alert('Welcome')");
 		
-		jse.executeScript("prompt('Enter your password')");
+	//	jse.executeScript("prompt('Enter your password')");
+		
+		jse.executeScript("confirm ('do you want go out')");
 
 	}
 
