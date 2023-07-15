@@ -19,11 +19,19 @@ public class JavaScriptExecutor2
 		
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		Thread.sleep(2000);
-	//	jse.executeScript("alert('Welcome')");
-		
-	//	jse.executeScript("prompt('Enter your password')");
-		
+		jse.executeScript("alert('Welcome')");
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+	
+		jse.executeScript("prompt('Enter your password')");
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+
 		jse.executeScript("confirm ('do you want go out')");
+		Thread.sleep(2000);
+		driver.switchTo().alert().accept();
+	
+		driver.close();
 
 	}
 
