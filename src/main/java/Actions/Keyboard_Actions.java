@@ -17,15 +17,17 @@ public class Keyboard_Actions
 		WebDriver d=new ChromeDriver();
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
-		
+
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		
+
 		WebElement username=d.findElement(By.xpath("//input[@name=\"username\"]"));
-		
+
 		Actions Act=new Actions(d);
-		
+
 		Act.moveToElement(username).click()
-.keyDown(username, Keys.SHIFT).sendKeys(username, "Admin").keyUp(username, Keys.SHIFT).build().perform();
+		.keyDown(username, Keys.SHIFT).sendKeys(username, "Admin").keyUp(username, Keys.SHIFT)
+		.doubleClick().contextClick().build().perform();
 	}
 
 }
+
