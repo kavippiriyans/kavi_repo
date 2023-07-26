@@ -81,12 +81,6 @@ public class OrangeHrmValidation extends DriverClass
 		{
 			Assert.assertTrue(name.isDisplayed(), "Recruitmentpage is not displayed");
 		}
-	
-
-
-
-
-
 }
 
 
